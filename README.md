@@ -237,7 +237,7 @@ El proyecto fue desarrollado como reto técnico para el proceso de selección de
 ## Enlaces del proyecto
 
 - **Repositorio GitHub:** https://github.com/BarreritA14/alegra-feedback-automation
-- **Web App / Backend (Google Apps Script):** https://script.google.com/macros/s/AKfycbwPlxLeoCsKT_mvqS5nGWC9ZBkI2H4wFevHrXqc9OVkC8mg5FYgL2Xx0OLtX3OkyQoCrw/exec
+- **Web App / Backend (Google Apps Script):https://script.google.com/macros/s/AKfycbwPlxLeoCsKT_mvqS5nGWC9ZBkI2H4wFevHrXqc9OVkC8mg5FYgL2Xx0OLtX3OkyQoCrw/exec
 - **Google Sheets:** https://docs.google.com/spreadsheets/d/1Sfro4SGrOimJfNER5yHNjeK4PUHje5rPhD2xLVehUWk/edit?usp=sharing
 - **Dashboard — Looker Studio:** https://datastudio.google.com/reporting/18ce0b63-2896-480d-bb47-a1e2bafc03dd
 
