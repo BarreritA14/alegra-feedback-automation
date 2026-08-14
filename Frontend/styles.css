@@ -1,0 +1,213 @@
+/* =========================================================
+   CONFIGURACIÓN GLOBAL
+   ========================================================= */
+
+/*
+   Aplica box-sizing a todos los elementos para incluir
+   padding y bordes dentro del tamaño definido.
+   También elimina márgenes y rellenos predeterminados.
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   ESTRUCTURA PRINCIPAL
+   ========================================================= */
+
+/*
+   Configuración general de la página:
+   - Define la fuente principal.
+   - Establece el color de fondo.
+   - Centra vertical y horizontalmente la aplicación.
+*/
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+   Contenedor principal.
+   Limita el ancho de la aplicación y agrega
+   espacio alrededor del formulario.
+*/
+.container {
+    width: 100%;
+    max-width: 520px;
+    padding: 20px;
+}
+
+
+/* =========================================================
+   TARJETA PRINCIPAL
+   ========================================================= */
+
+/*
+   Contenedor visual del formulario.
+   Utiliza fondo blanco, bordes redondeados y sombra
+   para separar la tarjeta del fondo de la página.
+*/
+.feedback-card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+/*
+   Espaciado inferior del encabezado.
+*/
+.feedback-header {
+    margin-bottom: 28px;
+}
+
+
+/*
+   Estilos del título principal.
+*/
+.feedback-header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+
+/*
+   Estilos del texto descriptivo.
+*/
+.feedback-header p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CAMPOS DEL FORMULARIO
+   ========================================================= */
+
+/*
+   Espaciado entre los diferentes grupos de campos.
+*/
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/*
+   Estilos de las etiquetas de los campos.
+*/
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+/*
+   Estilos compartidos para:
+   - input
+   - select
+   - textarea
+
+   Se incluye select porque Producto ahora se
+   selecciona mediante una lista desplegable.
+*/
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background: #ffffff;
+}
+
+
+/*
+   Estilos aplicados cuando el usuario interactúa
+   con cualquiera de los campos.
+*/
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+
+/*
+   Permite modificar verticalmente el tamaño del textarea,
+   evitando cambios horizontales que puedan afectar
+   el diseño.
+*/
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* =========================================================
+   BOTÓN DE ENVÍO
+   ========================================================= */
+
+/*
+   Estilos principales del botón.
+*/
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*
+   Cambio visual cuando el cursor pasa sobre el botón.
+*/
+button:hover {
+    background: #374151;
+}
+
+
+/*
+   Estado del botón mientras se está procesando
+   el envío del formulario.
+*/
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   MENSAJES
+   ========================================================= */
+
+/*
+   Área utilizada para mostrar mensajes de éxito
+   o errores durante el proceso de envío.
+*/
+#message {
+    margin-top: 16px;
+    text-align: center;
+    font-weight: bold;
+    min-height: 20px;
+}

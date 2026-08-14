@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración de caracteres para soportar correctamente el español. -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que la interfaz sea responsive en dispositivos móviles. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título mostrado en la pestaña del navegador. -->
+    <title>Alegra Feedback</title>
+
+    <!-- Archivo de estilos principal. -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Contenedor principal de la aplicación. -->
+    <main class="container">
+
+        <!-- Tarjeta principal que contiene el formulario. -->
+        <section class="feedback-card">
+
+            <!-- Encabezado de la aplicación. -->
+            <header class="feedback-header">
+                <h1>Alegra Feedback</h1>
+                <p>Comparte tu opinión sobre nuestro producto.</p>
+            </header>
+
+            <!--
+                Formulario principal para recopilar
+                información del feedback del usuario.
+            -->
+            <form id="feedbackForm">
+
+                <!-- Campo opcional para el nombre del usuario. -->
+                <div class="form-group">
+                    <label for="userName">Nombre</label>
+
+                    <input
+                        type="text"
+                        id="userName"
+                        name="userName"
+                        placeholder="Ingresa tu nombre (opcional)"
+                    >
+                </div>
+
+                <!-- Selector de productos disponibles. -->
+                <div class="form-group">
+                    <label for="product">Producto</label>
+
+                    <select
+                        id="product"
+                        name="product"
+                        required
+                    >
+                        <option value="">Selecciona un producto</option>
+                        <option value="Alegra POS">Alegra POS</option>
+                        <option value="Alegra Contabilidad">
+                            Alegra Contabilidad
+                        </option>
+                        <option value="Alegra Nómina">
+                            Alegra Nómina
+                        </option>
+                    </select>
+                </div>
+
+                <!-- Campo obligatorio para escribir el comentario. -->
+                <div class="form-group">
+                    <label for="comment">Comentario</label>
+
+                    <textarea
+                        id="comment"
+                        name="comment"
+                        rows="5"
+                        placeholder="Escribe tu comentario"
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- Botón para enviar el formulario. -->
+                <button type="submit" id="submitButton">
+                    Enviar feedback
+                </button>
+
+                <!-- Área destinada a mostrar mensajes al usuario. -->
+                <div id="message" role="alert"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Archivo que contiene la lógica JavaScript del formulario. -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
